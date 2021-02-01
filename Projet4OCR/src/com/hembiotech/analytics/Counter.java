@@ -9,7 +9,7 @@ import java.util.Map;
  * It must not contain duplications
  * 
  * The implementation does not need to order the map
- * 
+ * @author Amina Mounir
  */
 
 public class Counter {
