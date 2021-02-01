@@ -11,7 +11,8 @@ import java.util.TreeMap;
  * ordered TreeMmap of strings (symptoms) and integer(counting) and a file 
  * that will list each symptoms with their value
  * It must not contain duplications
- * 
+ * @author Amina Mounir
+ * @param sortedSymptoms : ordered TreeMmap of strings (symptoms) and integer(counting)
  */
 public class CreateFile {
 	public static void newFile(Map<String, Integer> SymptomsMap) throws IOException {
