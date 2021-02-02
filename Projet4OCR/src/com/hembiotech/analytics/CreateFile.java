@@ -5,7 +5,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 import java.util.TreeMap;
-
+/**
+ * Anything that will sort each symptoms  from a map and create a new file with the map content 
+ * The important part is, the return value from the operation, which is a 
+ * ordered TreeMmap of strings (symptoms) and integer(counting) and a file 
+ * that will list each symptoms with their value
+ * It must not contain duplications
+ * @author Amina Mounir
+ * @param sortedSymptoms : ordered TreeMmap of strings (symptoms) and integer(counting)
+ */
 public class CreateFile {
 	public static void newFile(Map<String, Integer> SymptomsMap) throws IOException {
 	

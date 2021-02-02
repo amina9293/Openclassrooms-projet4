@@ -1,15 +1,19 @@
 package com.hembiotech.analytics;
 
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
-
+/**
+ * A class that gathers many classes
+ * One that will read a file
+ * The second that will count each Symptoms with their value and store them into a Map
+ * The third that will generate a file with each symptoms and their value sorted by alphabetical order
+ * @author Amina Mounir
+ * @param listSymptoms : a list that store all the symptoms
+ * @param file : a string variable that store the file path
+ * @param counter : a map that store each symptoms with their values
+ * 
+ */
 public class AnalyticsCounter {
 	public static void main(String[] args) throws Exception {
 		
@@ -18,7 +22,7 @@ public class AnalyticsCounter {
 		ArrayList<String> listSymptoms = new ArrayList<String>();
 		
 		// String to store the file path 
-		String file = "/Users/macbook/git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt";
+		String file = "symptoms.txt";
 		
 		//Map to store the symptoms with their values
 		Map<String, Integer> counter = new HashMap<String, Integer>();
@@ -29,7 +33,7 @@ public class AnalyticsCounter {
 	    //CLASS 2 : count the number of each symptoms and sort them in order
 	    Counter.countSymptoms(listSymptoms, counter); 
 	        
-	    //CLASS 3 : Generate a new file 
+	    //CLASS 3 : Generate a new file and sort it by alphabetical order
 	    CreateFile.newFile(counter);  
 	        
 	        
